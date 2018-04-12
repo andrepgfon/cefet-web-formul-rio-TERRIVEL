@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Formulário Terrível</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <form action="http://terrivel.herokuapp.com/monster" method="GET"> <!-- ⬅️ GET! -->
+    <div id="tudo">
+      <label>Número de pedras pra doar ao monstro: <input name="num_pedras" type="number" step="1"></label><br>
+      <label>Tamanho das pedras que serão doadas : <input name="tam_pedras" type="number" step="any" min="1" max="7" value=3></label><br>
+      <label>Nome do Monstro : <input name="nome" type="text"></label><br>
+      <label>Cor Do Céu 1: <input name="corCeu1" type="color"><br> Cor Do Céu 2: <input name="corCeu2" type="color"></label><br>
+      <label for="tipo_pedra">Sabor da Pedra:
+      <select name="tipo_pedra" id="tipo_pedra">
+        <option value="marroada">Chocolate (marroada)</option>
+        <option value="ametista">Uva (ametista) </option>
+        <option value="topazio">Banana (ametista) </option>
+        <option value="espinela">Morango (espinela) </option>
+      </select></label><br>
+      <label>
+        Tipos de pedras sortidas: <input name="tipo_pedras_sortidas" type="checkbox" value="sim">
+      </label><br>
+
+      <button>"([{Enviar}])"</button>
+    </div>
+  </form>
+  
+  <form action="http://terrivel.herokuapp.com/monster" method="POST"> <!-- ⬅️ POST! -->
+    <div id="tudo">
+      <label>Número de pedras pra doar ao monstro: <input name="num_pedras" type="number" step="1"></label><br>
+      <label>Tamanho das pedras que serão doadas : <input name="tam_pedras" type="number" step="any" min="1" max="7" value=3></label><br>
+      <label>Nome do Monstro : <input name="nome" type="text"></label><br>
+      <label>Cor Do Céu 1: <input name="corCeu1" type="color"><br> Cor Do Céu 2: <input name="corCeu2" type="color"></label><br>
+      <label for="tipo_pedra">Sabor da Pedra:
+      <select name="tipo_pedra" id="tipo_pedra">
+        <option value="marroada">Chocolate (marroada)</option>
+        <option value="ametista">Uva (ametista) </option>
+        <option value="topazio">Banana (ametista) </option>
+        <option value="espinela">Morango (espinela) </option>
+      </select></label><br>
+      <label>
+        Tipos de pedras sortidas: <input name="tipo_pedras_sortidas" type="checkbox" value="sim">
+      </label><br>
+
+      <button>"([{Enviar}])"</button>
+    </div>
+  </form>
+</body>
+
+<html>
